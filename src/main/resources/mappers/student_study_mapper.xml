@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--resultMap id가 이름 type은 entity 경로-->
+<mapper namespace="com.korit.springboot_study.mapper.StudentStudyMapper">
+    <resultMap id="majorResultMap" type="com.korit.springboot_study.entity.study.Major">
+        <id property="majorId" column="major_id" /> <!--여기서 id는 pk(프라이머리 키) property는 entity변수명 -->
+        <result property="majorName" column="major_name" />
+    </resultMap>
+
+    <insert id="insertMajor" keyProperty="majorId" useGeneratedKeys="true"> <!-- keyProperty는 변수명-->
+        insert into major_tb
+        values (default, #{majorName})  <!--#{} = @getter역할 -->
+    </insert>
+    <insert id="insertInstructor" keyProperty="instructorId" useGeneratedKeys="true">
+        insert into instructor_tb
+        values (default, #{instructorName})
+    </insert>
+
+    <select id="selectMajorsAll" resultMap="majorResultMap"><!--resultMap으로 연결 -->
+        select
+        major_id,
+        major_name
+        from
+        major_tb
+
+        <!--호출되면 위에 코드 실행 -->
+    </select>
+    <resultMap id="InstructorResultMap" type="com.korit.springboot_study.entity.study.Instructor">
+        <id property="instructorId" column="instructor_id"/>
+        <result property="instructorName" column="instructor_name" />
+    </resultMap>
+    <select id="selectInstructorsAll" resultMap="InstructorResultMap">
+        select
+            instructor_id,
+            instructor_name
+        from
+            instructor_tb
+
+    </select>
+</mapper>
