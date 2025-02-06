@@ -21,7 +21,7 @@ public class StudentStudyRepository {
     public Optional<List<Major>> findMajorAll() {
         List<Major> foundMajors = studentStudyMapper.selectMajorsAll();
 
-        if(foundMajors.isEmpty()) {
+        if (foundMajors.isEmpty()) {
             return Optional.empty();
         }
         return Optional.ofNullable(foundMajors);
@@ -31,11 +31,12 @@ public class StudentStudyRepository {
     public Optional<List<Instructor>> findInstructorAll() {
         List<Instructor> foundInstructors = studentStudyMapper.selectInstructorsAll();
 
-        if(foundInstructors.isEmpty()) {
+        if (foundInstructors.isEmpty()) {
             return Optional.empty();
         }
         return Optional.ofNullable(foundInstructors);
     }
+
     // 학과명 추가할때 필요한 코드
     public Optional<Major> saveMajor(Major major) throws DuplicateKeyException { // DuplicateKeyException = 중복
         try {
@@ -49,6 +50,7 @@ public class StudentStudyRepository {
 
         return Optional.ofNullable(new Major(major.getMajorId(), major.getMajorName()));
     }
+
     // 교수명 추가할 때 필요한 코드
     public Optional<Instructor> saveInstructor(Instructor instructor) throws DuplicateKeyException {
         try {
@@ -61,6 +63,21 @@ public class StudentStudyRepository {
         }
         return Optional.ofNullable(new Instructor(instructor.getInstructorId(), instructor.getInstructorName()));
 
-
     }
+
+    public Optional<Major> UpdateMajor(Major major) throws DuplicateKeyException {
+        try {
+            if(studentStudyMapper.updateMajor(major) < 1) {
+                return Optional.empty();
+            }
+        } catch (DuplicateKeyException e) {
+            throw new CustomDuplicateKeyException(
+                    e.getMessage(),
+                    Map.of("majorName", "이미 존재하는 학과는 변경할 수 없습니다.")
+            );
+        }
+
+        return Optional.ofNullable(major);
+    }
+    // Repository는 DB에서 오는 정보 가공
 }

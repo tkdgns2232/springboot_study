@@ -18,6 +18,14 @@
         insert into instructor_tb
         values (default, #{instructorName})
     </insert>
+    <update id="updateMajor" keyProperty="majorId" useGeneratedKeys="true">
+        update
+            major_tb
+        set
+            major_name = #{majorName}
+        where
+            major_id = #{majorId}
+    </update>
 
     <select id="selectMajorsAll" resultMap="majorResultMap"><!--resultMap으로 연결 -->
         select

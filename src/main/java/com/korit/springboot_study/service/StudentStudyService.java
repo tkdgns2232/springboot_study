@@ -2,6 +2,7 @@ package com.korit.springboot_study.service;
 
 import com.korit.springboot_study.dto.request.study.ReqAddInstructorDto;
 import com.korit.springboot_study.dto.request.study.ReqAddMajorDto;
+import com.korit.springboot_study.dto.request.study.ReqUpdateMajorDto;
 import com.korit.springboot_study.dto.response.common.NotFoundResponseDto;
 import com.korit.springboot_study.dto.response.common.ResponseDto;
 import com.korit.springboot_study.dto.response.common.SuccessResponseDto;
@@ -56,4 +57,14 @@ public class StudentStudyService {
         );
     }
 
+    @Transactional(rollbackFor = Exception.class) // insert,update,delete는 @Transactional해야한다
+    public SuccessResponseDto<Major> modifyMajor(int majorId, ReqUpdateMajorDto reqUpdateMajorDto) throws DuplicateKeyException, NotFoundException {
+
+                Major modifiedMajor = studentStudyRepository
+                        .UpdateMajor(new Major(majorId,reqUpdateMajorDto.getMajorName()))
+                        .orElseThrow(() -> new NotFoundException("해당 학과 ID는 존재하지 않습니다."));
+                return new SuccessResponseDto<>(modifiedMajor);
+
+    }
+    // service는 개발자가 판단해서 오류 정해줌
 }
