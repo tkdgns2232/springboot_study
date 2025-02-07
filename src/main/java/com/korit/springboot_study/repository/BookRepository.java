@@ -8,32 +8,27 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @Repository
 public class BookRepository {
+
     @Autowired
     private BookMapper bookMapper;
 
-    public Optional<Book> saveBook(Book book) throws DuplicateKeyException {
+    public Optional<Book> save(Book book) {
         try {
-            bookMapper.insertBook(book);
-        } catch (DuplicateKeyException e) {
-            throw new CustomDuplicateKeyException(
-                    e.getMessage(),
-                    Map.of("bookName", "이미 존재하는 책 제목입니다.")
-            );
+            bookMapper.insert(book);
+        }catch (DuplicateKeyException e){
+            return Optional.empty();
         }
         return Optional.of(book);
     }
 
-    public Optional<List<Book>> findBookName() {
-        List<Book> foundBooks = bookMapper.selectBooksAll();
-
-        if (foundBooks.isEmpty()) {
-            return Optional.empty();
-        }
-        return Optional.of(foundBooks);
+    public Optional<List<Book>> findAllByNameContaining(String bookName) {
+        System.out.println(bookName);
+        return bookMapper.selectAllByNameContaining(bookName).isEmpty()
+                ? Optional.empty()
+                : Optional.of(bookMapper.selectAllByNameContaining(bookName));
     }
 }
