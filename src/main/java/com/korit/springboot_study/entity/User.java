@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -17,4 +19,8 @@ public class User {
     private String password;
     private String name;
     private String email;
+
+    // 여러개의 userRole이 필요
+    List<UserRole> userRoles;
+
 }
