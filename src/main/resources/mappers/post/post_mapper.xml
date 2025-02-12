@@ -55,7 +55,7 @@
             inner join user_tb ut on(ut.user_id = pt.user_id)<!--둘다 있는경우 inner 사용 -->
             left outer join cte_post_like_count_tb cplct on(cplct.post_id = pt.post_id)
         where
-            post_id = #{postId}
+            pt.post_id = #{postId}
     </select>
     <select id="selectAllBykeywordContaining" resultMap="postResultMap">
         with cte_post_like_count_tb as (
