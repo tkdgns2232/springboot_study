@@ -20,7 +20,15 @@ public class User {
     private String name;
     private String email;
 
+    private int isAccountNonExpired;
+    private int isAccountNonLocked;
+    private int isCredentialsNonExpired;
+    private int isEnabled;
+    // db에서 받아 올꺼라 int 사용
+
     // 여러개의 userRole이 필요
     List<UserRole> userRoles;
+
+
 
 }

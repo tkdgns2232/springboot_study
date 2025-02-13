@@ -1,2 +1,1 @@
-2025-02-12 12:32:26.964 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.PrintParamsAspect - 로그를 출력합니다.
-2025-02-12 12:47:16.205 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.PrintParamsAspect - 로그를 출력합니다.
+2025-02-13 11:48:38.573 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.LoggingAspect - 이미 존재하는 사용자 입니다.

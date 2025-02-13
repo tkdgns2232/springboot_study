@@ -1,12 +1,15 @@
 package com.korit.springboot_study.config;
 
 import com.korit.springboot_study.security.exception.CustomAuthenticationEntryPoint;
-import com.korit.springboot_study.security.filter.CustomAuthenticationFilter;
+import com.korit.springboot_study.security.filter.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
@@ -17,26 +20,43 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private CustomAuthenticationEntryPoint customAuthenticationEntryPoint; // 인증 실패시 예외 처리를 위한 객체
 
     @Autowired
-    private CustomAuthenticationFilter customAuthenticationFilter; // 커스텀 인증 필터
+    private JwtAuthenticationFilter jwtAuthenticationFilter; // 커스텀 인증 필터
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable(); // csrf를 비활성화 하겠다
         http.httpBasic().disable(); // HTTP Basic 인증 비활성화
         http.formLogin().disable(); // 기본 폼 로그인 비활성화
-        http.addFilterBefore(customAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        http.sessionManagement()
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
         // UsernamePasswordAuthenticationFilter 전에 커스텀 필터 추가 (인증 필터)
+
+        http.exceptionHandling()
+                .authenticationEntryPoint(customAuthenticationEntryPoint);  // 인증 예외 발생시 customAuthenticationEntryPoint 사용
 
         http.authorizeRequests()
                 .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
-                        "/api/post/**",
-                        "/api/user/**"
+                        "/swagger-ui/**",
+                        "/v2/api-docs/**",
+                        "/v3/api-docs/**",
+                        "/swagger-resources/**"
+                )
+                .permitAll()
+                .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
+                        "/api/auth/**"
+
                 )
                 .permitAll()
                 .anyRequest()
-                .authenticated() // 그 외의 모든 요청에 대해서는 인증 필요
-                .and()
-                .exceptionHandling()
-                .authenticationEntryPoint(customAuthenticationEntryPoint); // 인증 예외 발생시 customAuthenticationEntryPoint 사용
+                .authenticated(); // 그 외의 모든 요청에 대해서는 인증 필요
+
     }
 }
 
@@ -72,7 +92,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
  이는 인증 오류를 처리하기 위한 클래스입니다.
  authenticationEntryPoint 호출: 클라이언트가 인증되지 않은 상태로 인증이 필요한 페이지나 API를 요청하면,
  Spring Security는 **CustomAuthenticationEntryPoint**를 호출합니다. 이 클래스는 인증 예외가 발생했을 때 실행됩니다.
- 예외 처리: CustomAuthenticationEntryPoint.commence() 메서드는 인증되지 않은 사용자에게 403 Forbidden 상태 코드와 함께 오류 메시지를 JSON 형식으로 응답합니다. 여기서는 "인증필요합니다!!!"라는 메시지를 반환하며, 클라이언트는 인증이 필요하다는 정보를 받게 됩니다.
+ 예외 처리: CustomAuthenticationEntryPoint.commence() 메서드는 인증되지 않은 사용자에게 403 Forbidden 상태 코드와 함께 오류 메시지를 JSON 형식으로 응답합니다.
+ 여기서는 "인증필요합니다!!!"라는 메시지를 반환하며, 클라이언트는 인증이 필요하다는 정보를 받게 됩니다.
 
  5. 응답 전송
  인증이 성공적으로 완료되면, 서버는 요청을 정상적으로 처리하고, 응답을 클라이언트에게 보냅니다.
