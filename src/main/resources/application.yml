@@ -1,13 +1,11 @@
 spring:
+  config:
+    import: application-secret.yml
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/study
-    username: root
-    password: 1q2w3e4r!
-
 mybatis:
   mapper-locations:
     - /mappers/*.xml
@@ -20,5 +18,6 @@ logging:
   file:
     path: logs
 
-jwt:
-  secret: d4a019623df65522ca70a2362b8d07131bb2b14aac6a56cb035b78a0d9fd53b64efe67e2d662c5efaa28377f8f52123d2834e95a932eefb016710e31159e16186eb094f3b8e55edeb9fc46c1cd4453001db4228fd57e946a2045441c632d75734393daa4aa546e507d1dd947f93e23f99523df6368ed3a001ed078e7f09eb8b761964d6c4b89afc49f7a16ba4a211439d0d50925995a5f058e0ad70b675948b97df029e74395c7d10dd080174afcb22d0311a52ecb99ed687b681dd599a39a6252aa90666d0ac0c24c702464e6199cd5408ff61feb665a6266db02cd03ca116fd8ea815f80c285b638ecd64d07359b9f9add76a9621542fd091eb783b1b040a4
+oauth2:
+  client:
+    redirect_uri: http://localhost:3000/oauth2

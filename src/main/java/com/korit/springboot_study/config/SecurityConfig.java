@@ -2,9 +2,12 @@ package com.korit.springboot_study.config;
 
 import com.korit.springboot_study.security.exception.CustomAuthenticationEntryPoint;
 import com.korit.springboot_study.security.filter.JwtAuthenticationFilter;
+import com.korit.springboot_study.security.oauth2.OAuth2Service;
+import com.korit.springboot_study.security.oauth2.OAuth2SuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -15,6 +18,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private OAuth2SuccessHandler oAuth2SuccessHandler;
+
+    @Autowired
+    private OAuth2Service oAuth2Service;
 
     @Autowired
     private CustomAuthenticationEntryPoint customAuthenticationEntryPoint; // 인증 실패시 예외 처리를 위한 객체
@@ -41,6 +50,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.exceptionHandling()
                 .authenticationEntryPoint(customAuthenticationEntryPoint);  // 인증 예외 발생시 customAuthenticationEntryPoint 사용
 
+        http.oauth2Login()
+                .successHandler(oAuth2SuccessHandler)
+                    .userInfoEndpoint()
+                        .userService(oAuth2Service);
+
         http.authorizeRequests()
                 .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
                         "/swagger-ui/**",
@@ -50,6 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .permitAll()
                 .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
+                        HttpMethod.GET, "/api/post/**",
                         "/api/auth/**"
 
                 )

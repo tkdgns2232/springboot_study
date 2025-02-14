@@ -40,7 +40,7 @@ public class PostService {
 
         return post;
     }
-
+ 
     @PrintParamsAop
     public List<Post> getAllPostsByKeywordContaining(int page, int size, String keyword) throws Exception {
         int startIndex = (page - 1) * size; // 페이지 공식 코드
