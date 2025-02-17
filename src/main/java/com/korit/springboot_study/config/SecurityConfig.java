@@ -38,6 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.cors(); // cors를 사용하겠다
         http.csrf().disable(); // csrf를 비활성화 하겠다
         http.httpBasic().disable(); // HTTP Basic 인증 비활성화
         http.formLogin().disable(); // 기본 폼 로그인 비활성화
@@ -60,7 +61,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-ui/**",
                         "/v2/api-docs/**",
                         "/v3/api-docs/**",
-                        "/swagger-resources/**"
+                        "/swagger-resources/**",
+                        "/server/hc"
                 )
                 .permitAll()
                 .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
