@@ -1,3 +1,3 @@
-2025-02-13 11:48:38.573 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.LoggingAspect - 이미 존재하는 사용자 입니다.
-2025-02-13 16:28:31.703 [http-nio-8080-exec-3] ERROR com.korit.springboot_study.aspect.LoggingAspect - 사용자 정보를 다시 확인하세요.
-2025-02-13 16:30:09.751 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.PrintParamsAspect - 로그를 출력합니다.
+2025-02-18 11:00:13.730 [http-nio-8080-exec-7] ERROR com.korit.springboot_study.aspect.PrintParamsAspect - 로그를 출력합니다.
+2025-02-18 11:00:14.183 [http-nio-8080-exec-7] ERROR com.korit.springboot_study.aspect.LoggingAspect - 이미 존재하는 사용자 입니다.
+2025-02-18 11:02:27.038 [http-nio-8080-exec-1] ERROR com.korit.springboot_study.aspect.PrintParamsAspect - 로그를 출력합니다.

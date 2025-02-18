@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.List;
 
 @Component
 public class JwtAuthenticationFilter implements Filter {
@@ -27,30 +28,33 @@ public class JwtAuthenticationFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest request = (HttpServletRequest) servletRequest; // HttpServletRequest 다운 캐스팅
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+
+        System.out.println(request.getRequestURI());
 
         // Bearer Token(JWT)
-        String authorization = request.getHeader("Authorization"); // 다운캐스팅하면 getHeader 사용가능
+        String authorization = request.getHeader("Authorization");
 
         if (jwtProvider.validateToken(authorization)) {
             setJwtAuthentication(authorization);
         }
 
-        filterChain.doFilter(servletRequest, servletResponse); // 다음 filter 호출
-
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
-    private void setJwtAuthentication(String bearerToken){
-        Claims claims = jwtProvider.parseToken(bearerToken);
-        if(claims == null){
-            throw new JwtException("Invalid JWT token");
+    private void setJwtAuthentication(String bearerToken) {
+        String accessToken = jwtProvider.removeBearer(bearerToken);
+        Claims claims = jwtProvider.parseToken(accessToken);
+        if(claims == null) {
+            return;
         }
         int userId = Integer.parseInt(claims.get("userId").toString());
         userRepository.findById(userId).ifPresent(user -> {
             SecurityContext securityContext = SecurityContextHolder.getContext();
             PrincipalUser principalUser = new PrincipalUser(user);
-            Authentication authentication = new UsernamePasswordAuthenticationToken(principalUser,principalUser.getPassword(),principalUser.getAuthorities());
+            Authentication authentication = new UsernamePasswordAuthenticationToken(principalUser, principalUser.getPassword(), principalUser.getAuthorities());
             securityContext.setAuthentication(authentication);
         });
     }
+
 }

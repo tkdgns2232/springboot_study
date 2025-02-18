@@ -1,6 +1,7 @@
 package com.korit.springboot_study.config;
 
 import com.korit.springboot_study.security.exception.CustomAuthenticationEntryPoint;
+import com.korit.springboot_study.security.filter.CustomAuthenticationFilter;
 import com.korit.springboot_study.security.filter.JwtAuthenticationFilter;
 import com.korit.springboot_study.security.oauth2.OAuth2Service;
 import com.korit.springboot_study.security.oauth2.OAuth2SuccessHandler;
@@ -26,10 +27,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private OAuth2Service oAuth2Service;
 
     @Autowired
-    private CustomAuthenticationEntryPoint customAuthenticationEntryPoint; // 인증 실패시 예외 처리를 위한 객체
+    private CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
 
     @Autowired
-    private JwtAuthenticationFilter jwtAuthenticationFilter; // 커스텀 인증 필터
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
@@ -38,26 +39,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.cors(); // cors를 사용하겠다
-        http.csrf().disable(); // csrf를 비활성화 하겠다
-        http.httpBasic().disable(); // HTTP Basic 인증 비활성화
-        http.formLogin().disable(); // 기본 폼 로그인 비활성화
+        http.cors();
+        http.csrf().disable();
+        http.httpBasic().disable();
+        http.formLogin().disable();
         http.sessionManagement()
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
-        // UsernamePasswordAuthenticationFilter 전에 커스텀 필터 추가 (인증 필터)
 
         http.exceptionHandling()
-                .authenticationEntryPoint(customAuthenticationEntryPoint);  // 인증 예외 발생시 customAuthenticationEntryPoint 사용
+                .authenticationEntryPoint(customAuthenticationEntryPoint);
 
         http.oauth2Login()
                 .successHandler(oAuth2SuccessHandler)
-                    .userInfoEndpoint()
-                        .userService(oAuth2Service);
+                .userInfoEndpoint()
+                .userService(oAuth2Service);
 
         http.authorizeRequests()
-                .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
+                .antMatchers(
                         "/swagger-ui/**",
                         "/v2/api-docs/**",
                         "/v3/api-docs/**",
@@ -65,15 +65,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/server/hc"
                 )
                 .permitAll()
-                .antMatchers( // 특정 URL 패턴에 대해서는 인증 없이 접근 허용
-                        HttpMethod.GET, "/api/post/**",
-                        "/api/auth/**"
-
-                )
+                .antMatchers("/api/auth/**")
+                .permitAll()
+                .antMatchers(HttpMethod.GET, "/api/post/**")
                 .permitAll()
                 .anyRequest()
-                .authenticated(); // 그 외의 모든 요청에 대해서는 인증 필요
-
+                .authenticated();
     }
 }
 

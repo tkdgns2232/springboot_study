@@ -1,1217 +1,174 @@
-2025-02-17 09:39:32.407 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 09:39:32.457 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 09:39:32.458 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 09:39:34.266 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:39:34.274 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:39:34.274 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:39:34.274 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:39:34.338 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:39:34.338 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1880 ms
-2025-02-17 09:39:35.289 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 09:39:35.381 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:39:35.587 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:39:35.599 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 09:42:18.635 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.korit.springboot_study]' package. Please check your configuration.
-2025-02-17 09:42:18.676 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:42:18.677 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:42:18.677 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:42:18.677 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:42:18.688 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:42:18.688 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 243 ms
-2025-02-17 09:42:18.774 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:42:18.823 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-2025-02-17 09:42:18.824 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 09:42:18.831 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 09:42:18.846 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525$$FastClassBySpringCGLIB$$4c4d9b77.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\korea_gpt\springboot_study\target\classes\mappers\student_study_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525$$FastClassBySpringCGLIB$$4c4d9b77.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525$$FastClassBySpringCGLIB$$4c4d9b77.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.korit.springboot_study.entity.study.Major'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525$$FastClassBySpringCGLIB$$4c4d9b77.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-Caused by: java.lang.ClassNotFoundException: Cannot find class: com.korit.springboot_study.entity.study.Major
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525$$FastClassBySpringCGLIB$$4c4d9b77.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b743c525.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
-	... 24 more
-2025-02-17 09:42:24.528 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:42:24.529 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:42:24.530 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:42:24.530 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:42:24.541 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:42:24.541 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 749 ms
-2025-02-17 09:42:25.022 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 09:42:25.129 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:42:25.324 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:42:25.326 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 09:42:25.561 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 09:45:07.201 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:45:07.202 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:45:07.202 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:45:07.202 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:45:07.211 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:45:07.211 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 279 ms
-2025-02-17 09:45:07.519 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 09:45:07.560 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:45:07.658 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:45:07.659 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 09:45:07.849 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 09:46:28.032 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:46:28.032 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:46:28.033 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:46:28.033 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:46:28.042 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:46:28.042 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 317 ms
-2025-02-17 09:46:28.376 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 09:46:28.435 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:46:28.535 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:46:28.537 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 09:46:28.725 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 09:46:30.396 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 09:46:30.396 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:46:30.396 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 09:46:30.397 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 09:46:30.406 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 09:46:30.406 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
-2025-02-17 09:46:30.719 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 09:46:30.769 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 09:46:30.876 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 09:46:30.878 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 09:46:31.063 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 09:46:34.389 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 09:46:34.389 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 09:46:34.390 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 10:06:09.734 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:06:09.734 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:06:09.735 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:06:09.735 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:06:09.745 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:06:09.745 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 365 ms
-2025-02-17 10:06:09.822 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationController': Unsatisfied dependency expressed through field 'authenticationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationService': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2025-02-17 10:06:09.822 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:06:09.826 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:06:09.830 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field passwordEncoder in com.korit.springboot_study.service.AuthenticationService required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
-
-2025-02-17 10:06:11.562 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:06:11.563 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:06:11.563 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:06:11.563 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:06:11.572 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:06:11.572 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 292 ms
-2025-02-17 10:06:11.895 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:06:11.940 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:06:12.044 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:06:12.047 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:06:12.232 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 10:14:03.248 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 10:14:03.248 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 10:14:03.249 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 10:15:09.723 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:15:09.724 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:15:09.724 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:15:09.724 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:15:09.733 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:15:09.734 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 306 ms
-2025-02-17 10:15:10.053 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:15:10.093 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:15:10.185 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:15:10.186 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:15:10.364 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 10:17:43.933 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:17:43.934 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:17:43.934 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:17:43.934 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:17:43.943 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:17:43.943 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 319 ms
-2025-02-17 10:17:44.267 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:17:44.312 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:17:44.413 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:17:44.415 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:17:44.598 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 10:17:46.269 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:17:46.270 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:17:46.270 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:17:46.270 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:17:46.281 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:17:46.281 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 367 ms
-2025-02-17 10:17:46.698 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:17:46.753 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:17:46.871 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:17:46.873 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:17:47.055 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 10:18:50.946 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:18:50.989 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:18:50.989 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:18:52.157 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:18:52.163 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:18:52.163 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:18:52.164 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:18:52.210 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:18:52.211 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
-2025-02-17 10:18:53.004 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:18:53.141 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:18:53.229 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:18:53.458 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:18:53.469 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:18:53.471 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:18:53.486 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:18:53.486 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:18:53.489 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:18:53.489 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:18:53.499 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:18:53.509 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 10:19:48.289 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:19:48.332 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:19:48.333 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:19:49.503 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:19:49.508 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:19:49.508 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:19:49.508 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:19:49.555 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:19:49.555 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1222 ms
-2025-02-17 10:19:50.331 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:19:50.503 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:19:50.586 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:19:50.791 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:19:50.802 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:19:50.805 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:19:50.817 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:19:50.818 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:19:50.820 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:19:50.822 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:19:50.831 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:19:50.841 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 10:21:03.671 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:21:03.714 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:21:03.714 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:21:04.882 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:21:04.888 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:21:04.888 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:21:04.888 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:21:04.936 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:21:04.936 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1221 ms
-2025-02-17 10:21:05.724 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:21:05.895 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:21:05.975 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:21:06.184 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:21:06.196 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:21:06.198 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:21:06.212 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:21:06.212 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:21:06.215 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:21:06.216 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:21:06.225 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:21:06.235 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 10:25:12.586 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:25:12.629 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:25:12.630 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:25:13.813 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:25:13.819 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:25:13.819 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:25:13.820 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:25:13.867 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:25:13.867 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
-2025-02-17 10:25:14.657 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:25:14.828 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:25:14.909 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:25:15.110 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:25:15.121 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:25:15.124 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:25:15.138 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:25:15.138 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:25:15.141 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:25:15.142 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:25:15.151 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:25:15.161 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 10:34:08.897 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:34:08.940 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:34:08.941 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:34:10.120 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:34:10.126 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:34:10.127 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:34:10.127 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:34:10.174 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:34:10.174 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1233 ms
-2025-02-17 10:34:11.031 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:34:11.207 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:34:11.291 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:34:11.528 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:34:11.540 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:34:11.542 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:34:11.560 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:34:11.561 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:34:11.565 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:34:11.566 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:34:11.577 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:34:11.591 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 10:50:52.438 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 10:50:52.481 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 10:50:52.482 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 10:50:53.649 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 10:50:53.655 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:50:53.655 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 10:50:53.656 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 10:50:53.747 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 10:50:53.747 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1265 ms
-2025-02-17 10:50:54.536 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 10:50:54.701 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 10:50:54.787 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 10:50:54.986 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:50:54.998 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 10:50:55.000 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 10:50:55.015 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:50:55.015 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 10:50:55.018 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:50:55.019 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 10:50:55.028 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 10:50:55.038 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 11:01:49.803 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 11:01:49.847 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 11:01:49.847 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 11:01:51.014 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 11:01:51.019 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:01:51.019 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 11:01:51.019 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 11:01:51.066 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 11:01:51.067 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
-2025-02-17 11:01:51.886 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 11:01:52.054 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 11:01:52.135 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 11:01:52.335 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:01:52.347 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 11:01:52.350 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 11:01:52.364 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:01:52.364 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 11:01:52.367 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:01:52.368 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:01:52.377 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 11:01:52.387 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 11:04:11.994 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 11:04:12.038 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 11:04:12.039 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 11:04:13.424 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 11:04:13.430 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:13.430 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 11:04:13.430 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 11:04:13.479 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 11:04:13.479 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1440 ms
-2025-02-17 11:04:14.368 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 11:04:14.555 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 11:04:14.634 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 11:04:14.902 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:14.915 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 11:04:14.918 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 11:04:14.933 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:14.934 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 11:04:14.937 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:14.938 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:14.948 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 11:04:14.959 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 11:04:25.276 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 11:04:25.317 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 11:04:25.317 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 11:04:26.479 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 11:04:26.484 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:26.485 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 11:04:26.485 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 11:04:26.534 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 11:04:26.534 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1216 ms
-2025-02-17 11:04:27.319 [restartedMain] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-02-17 11:04:27.492 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 11:04:27.570 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 11:04:27.774 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:27.786 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 11:04:27.788 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-2025-02-17 11:04:27.802 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:27.802 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2025-02-17 11:04:27.805 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:27.806 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:04:27.816 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2025-02-17 11:04:27.826 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.18.jar:5.3.18]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.18.jar:5.3.18]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at com.korit.springboot_study.SpringbootStudyApplication.main(SpringbootStudyApplication.java:10) ~[classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
-	at java.util.TimSort.sort(TimSort.java:234) ~[?:?]
-	at java.util.Arrays.sort(Arrays.java:1306) ~[?:?]
-	at java.util.ArrayList.sort(ArrayList.java:1721) ~[?:?]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.18.jar:5.3.18]
-	... 19 more
-2025-02-17 11:06:39.737 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 11:06:39.783 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 11:06:39.783 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 11:06:41.313 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 11:06:41.319 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:06:41.319 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 11:06:41.320 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 11:06:41.368 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 11:06:41.368 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1584 ms
-2025-02-17 11:06:42.194 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 11:06:42.265 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 11:06:42.430 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:06:42.441 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 11:23:16.623 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 11:23:16.668 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 11:23:16.669 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 11:23:17.698 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 11:23:17.704 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:23:17.705 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 11:23:17.705 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 11:23:17.751 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 11:23:17.751 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1082 ms
-2025-02-17 11:23:18.530 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 11:23:18.601 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 11:23:18.769 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 11:23:18.780 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 11:55:19.043 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 11:55:19.043 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 11:55:19.045 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 12:07:07.497 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 12:07:07.540 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 12:07:07.541 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 12:07:08.609 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 12:07:08.616 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:07:08.616 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 12:07:08.616 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 12:07:08.668 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 12:07:08.668 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1127 ms
-2025-02-17 12:07:09.678 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 12:07:09.759 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 12:07:09.954 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:07:09.968 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 12:07:21.502 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 12:07:21.502 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 12:07:21.505 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-02-17 12:24:23.171 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 12:24:23.219 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 12:24:23.219 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 12:24:24.248 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 12:24:24.254 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:24:24.254 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 12:24:24.254 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 12:24:24.305 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 12:24:24.305 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1085 ms
-2025-02-17 12:24:25.088 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 12:24:25.160 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 12:24:25.329 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:24:25.340 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 12:30:54.093 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 12:30:54.093 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 12:30:54.094 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 12:33:25.356 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 12:33:25.401 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 12:33:25.401 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 12:33:26.430 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 12:33:26.436 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:33:26.437 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 12:33:26.437 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 12:33:26.485 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 12:33:26.485 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1083 ms
-2025-02-17 12:33:27.296 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 12:33:27.387 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 12:33:27.558 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:33:27.570 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 12:34:13.181 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 12:34:13.181 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 12:34:13.182 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-02-17 12:42:25.273 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2025-02-17 12:43:01.538 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 12:43:01.583 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 12:43:01.583 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 12:43:02.644 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 12:43:02.650 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:43:02.650 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 12:43:02.650 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 12:43:02.698 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 12:43:02.698 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1114 ms
-2025-02-17 12:43:03.504 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 12:43:03.576 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 12:43:03.745 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:43:03.756 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 12:44:21.125 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 12:44:21.125 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 12:44:21.126 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 12:44:33.804 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 12:44:33.849 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 12:44:33.849 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 12:44:34.889 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 12:44:34.895 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:44:34.896 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 12:44:34.896 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 12:44:34.946 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 12:44:34.946 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1096 ms
-2025-02-17 12:44:35.773 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 12:44:35.850 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 12:44:36.029 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 12:44:36.046 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 12:45:32.083 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 12:45:32.084 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 12:45:32.085 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 12:51:44.339 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2025-02-17 13:32:13.317 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 13:32:13.318 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:13.319 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 13:32:13.319 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 13:32:13.332 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 13:32:13.332 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 395 ms
-2025-02-17 13:32:13.723 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 13:32:13.756 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 13:32:13.843 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:13.845 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 13:32:14.060 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 13:32:15.664 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 13:32:15.664 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:15.665 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 13:32:15.665 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 13:32:15.675 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 13:32:15.675 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 324 ms
-2025-02-17 13:32:16.056 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 13:32:16.098 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 13:32:16.182 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:16.183 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 13:32:16.385 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 13:32:35.668 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 13:32:35.669 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:35.669 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 13:32:35.669 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 13:32:35.678 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 13:32:35.678 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 284 ms
-2025-02-17 13:32:36.026 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 13:32:36.058 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 13:32:36.140 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 13:32:36.141 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 13:32:36.303 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 13:32:36.303 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 13:32:36.304 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 13:32:36.306 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2025-02-17 13:32:36.344 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 13:32:41.200 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2025-02-17 14:22:37.856 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 14:22:37.857 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:22:37.857 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 14:22:37.857 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 14:22:37.869 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 14:22:37.869 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 380 ms
-2025-02-17 14:22:38.240 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 14:22:38.277 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 14:22:38.369 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:22:38.370 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 14:22:38.564 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 14:22:40.123 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 14:22:40.124 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:22:40.124 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 14:22:40.124 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 14:22:40.134 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 14:22:40.134 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 280 ms
-2025-02-17 14:22:40.450 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 14:22:40.487 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 14:22:40.565 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:22:40.567 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 14:22:40.748 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 14:23:47.728 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 14:23:47.729 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:23:47.729 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 14:23:47.729 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 14:23:47.738 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 14:23:47.738 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
-2025-02-17 14:23:48.140 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 14:23:48.184 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 14:23:48.279 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:23:48.281 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 14:23:48.433 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 14:23:48.433 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 14:23:48.434 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 14:23:48.540 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 14:23:50.045 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 14:23:50.046 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:23:50.046 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 14:23:50.046 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 14:23:50.055 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 14:23:50.055 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 289 ms
-2025-02-17 14:23:50.375 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 14:23:50.408 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 14:23:50.495 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:23:50.497 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 14:23:50.674 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-02-17 14:25:33.041 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 14:25:33.041 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 14:25:33.042 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-02-17 14:51:21.083 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 14:51:21.130 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 14:51:21.130 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 14:51:22.179 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 14:51:22.179 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:51:22.179 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 14:51:22.179 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 14:51:22.242 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 14:51:22.242 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1112 ms
-2025-02-17 14:51:23.040 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 14:51:23.108 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 14:51:23.280 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 14:51:23.295 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 14:51:27.530 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 14:51:27.530 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 14:51:27.533 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-02-17 15:44:39.297 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2025-02-17 16:03:56.994 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-02-17 16:03:57.039 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-02-17 16:03:57.040 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-02-17 16:03:58.112 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-02-17 16:03:58.118 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-17 16:03:58.118 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-02-17 16:03:58.118 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2025-02-17 16:03:58.167 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-02-17 16:03:58.167 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1127 ms
-2025-02-17 16:03:58.960 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
-2025-02-17 16:03:59.035 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-02-17 16:03:59.207 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-02-17 16:03:59.218 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-02-17 16:04:02.421 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-17 16:04:02.421 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-02-17 16:04:02.422 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 09:10:48.646 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-02-18 09:10:48.693 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18 09:10:48.693 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18 09:10:50.672 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 09:10:50.680 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 09:10:50.681 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 09:10:50.681 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 09:10:50.736 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 09:10:50.736 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2043 ms
+2025-02-18 09:10:51.678 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 09:10:51.769 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 09:10:51.971 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 09:10:51.983 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 09:15:05.476 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 09:15:05.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 09:15:05.477 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 09:31:15.791 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2025-02-18 09:47:05.764 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2025-02-18 10:17:15.425 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-02-18 10:17:15.470 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18 10:17:15.470 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18 10:17:16.512 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 10:17:16.518 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:17:16.519 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 10:17:16.519 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 10:17:16.569 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 10:17:16.569 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1098 ms
+2025-02-18 10:17:17.347 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 10:17:17.420 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 10:17:17.591 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:17:17.603 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 10:17:22.019 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 10:17:22.019 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 10:17:22.020 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 10:17:31.503 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2025-02-18 10:17:37.398 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2025-02-18 10:22:49.406 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 10:22:49.407 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:22:49.407 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 10:22:49.407 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 10:22:49.417 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 10:22:49.417 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 295 ms
+2025-02-18 10:22:49.783 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 10:22:49.826 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 10:22:50.010 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:22:50.014 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 10:22:50.254 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 10:22:50.254 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 10:22:50.256 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-02-18 10:22:50.289 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 10:34:59.714 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-02-18 10:34:59.759 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18 10:34:59.760 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18 10:35:00.786 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 10:35:00.792 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:35:00.792 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 10:35:00.793 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 10:35:00.840 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 10:35:00.840 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1080 ms
+2025-02-18 10:35:01.618 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 10:35:01.690 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 10:35:01.857 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:35:01.870 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 10:35:10.827 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 10:35:10.827 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 10:35:10.828 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 10:54:24.348 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 10:54:24.348 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:54:24.348 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 10:54:24.349 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 10:54:24.361 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 10:54:24.361 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 445 ms
+2025-02-18 10:54:24.780 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 10:54:24.817 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 10:54:24.909 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:54:24.911 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 10:54:25.116 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 10:54:26.712 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 10:54:26.712 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:54:26.712 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 10:54:26.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 10:54:26.721 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 10:54:26.721 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 311 ms
+2025-02-18 10:54:27.062 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 10:54:27.094 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 10:54:27.190 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 10:54:27.194 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 10:54:27.389 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 10:57:10.135 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 10:57:10.135 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 10:57:10.136 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 11:00:13.739 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-18 11:00:14.031 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-18 11:00:14.192 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [com.korit.springboot_study.exception.CustomDuplicateKeyException: 이미 존재하는 사용자 입니다.]
+2025-02-18 11:00:20.275 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2025-02-18 11:01:29.931 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-18 11:01:29.942 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-18 11:01:30.345 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 11:01:30.346 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:01:30.346 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 11:01:30.346 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 11:01:30.356 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 11:01:30.356 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 339 ms
+2025-02-18 11:01:30.733 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 11:01:30.768 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 11:01:30.851 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:01:30.855 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 11:01:31.041 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 11:01:32.630 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 11:01:32.631 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:01:32.631 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 11:01:32.631 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 11:01:32.642 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 11:01:32.642 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 277 ms
+2025-02-18 11:01:32.965 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 11:01:32.998 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 11:01:33.084 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:01:33.086 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 11:01:33.264 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 11:02:15.880 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-02-18 11:02:15.927 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18 11:02:15.927 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18 11:02:16.958 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 11:02:16.964 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:02:16.965 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 11:02:16.965 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 11:02:17.011 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 11:02:17.012 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1084 ms
+2025-02-18 11:02:17.788 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 11:02:17.859 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 11:02:18.048 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 11:02:18.060 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 11:02:26.948 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 11:02:26.948 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-18 11:02:26.949 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-18 11:02:27.046 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-18 11:02:27.259 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-18 16:20:51.328 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-18 16:20:51.333 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-18 16:20:53.149 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-02-18 16:20:53.198 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18 16:20:53.199 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18 16:20:54.223 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 16:20:54.229 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:20:54.230 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 16:20:54.230 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 16:20:54.279 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 16:20:54.279 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1080 ms
+2025-02-18 16:20:55.063 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 16:20:55.134 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 16:20:55.301 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:20:55.313 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 16:30:04.648 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 16:30:04.648 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:30:04.648 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 16:30:04.649 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 16:30:04.660 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 16:30:04.660 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 436 ms
+2025-02-18 16:30:05.150 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 16:30:05.200 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 16:30:05.305 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:30:05.307 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 16:30:05.532 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-18 16:30:07.098 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-18 16:30:07.098 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:30:07.098 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-18 16:30:07.099 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-18 16:30:07.109 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-18 16:30:07.109 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 285 ms
+2025-02-18 16:30:07.485 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure any request
+2025-02-18 16:30:07.522 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-18 16:30:07.606 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-18 16:30:07.608 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-18 16:30:07.838 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
